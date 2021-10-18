@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('head'); %>
+</head>
+<body>
+    <%- include('header'); %>
+    <main>
+        <ul class="list">
+            <% articles.forEach((article) => { %>
+            <li>
+                <% if(article.category === 'limited'){ %>
+                    <i>MEMBER ONLY</i>
+                <% } %>
+                <h2><%= article.title %></h2>
+                <p><%= article.summary %></p>
+                <br>
+                <a href="/article/<%= article.id %>">Baca selengkapnya</a>
+            </li>
+            <% }) %>
+        </ul>
+    </main>
+</body>
+</html>

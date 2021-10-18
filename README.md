@@ -1,2 +1,1 @@
-# Prasetiyo-Blog-NodeJS
-Repo latihan NodeJS
+# Blog-Node.js

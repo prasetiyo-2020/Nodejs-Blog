@@ -1,0 +1,20 @@
+@media only screen and (max-width: 600px) {
+    header>p {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    header li a{
+        opacity: 0;
+    }
+
+    .list{
+        width: 90%;
+        margin: auto;
+    }
+
+    .article{
+        width: 90%;
+        margin: auto;
+    }
+}

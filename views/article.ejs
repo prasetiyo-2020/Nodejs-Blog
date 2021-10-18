@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('head'); %>
+</head>
+
+<body>
+    <%- include('header'); %>
+    <main>
+        <div class="article">
+            <% if(article.category === 'all'){ %>
+            <h1><%= article.title %></h1>
+            <p><%= article.content %></p>
+            <% } %>
+
+            <% if(article.category === 'limited'){ %>
+            <i>MEMBER ONLY</i>
+            <h1><%= article.title %></h1>
+
+            <% if(locals.isLoggedIn){ %>
+            <p><%= article.content %></p>
+            <% } else { %>
+            <div class="article-login">
+                <p>Ayo login sekarang!</p>
+                <p>Silahkan login untuk membaca<br>artikel selengkapnya.</p>
+                <img src="/images/loginrequire.png">
+                <a class="btn" href="/login">Login</a>
+            </div>
+            <% } %>
+
+            <% } %>
+        </div>
+    </main>
+    <footer>
+        <a class="btn sub" href="/list">Kembali ke Artikel</a>
+    </footer>
+</body>
+
+</html>

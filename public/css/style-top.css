@@ -1,0 +1,54 @@
+body {
+    overflow: hidden;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 800px;
+    background-image: url("/images/top.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content h1 {
+    padding-top: 300px;
+    color: white;
+}
+
+.content h3 {
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn {
+    margin-top: 45px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .jumbotron {
+        width: 100%;
+        height: 800px;
+        background-image: url("/images/top.jpg");
+        background-size: cover;
+    }
+    
+    .content h1 {
+        padding-top: 250px;
+        color: white;
+    }
+    
+    .content h3 {
+        padding-top: 15px;
+        margin: 0px 20px;
+        font-size: 15px;
+        color: white;
+    }
+    
+}

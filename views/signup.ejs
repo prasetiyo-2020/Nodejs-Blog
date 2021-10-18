@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('head'); %>
+</head>
+
+<body>
+    <div class="sign">
+        <div class="container">
+            <h1><a href="/list">BLOG</a></h1>
+            <div class="panel">
+                <h2>Pendaftaran</h2>
+                <% if (errors.length > 0) { %>
+                <ul class="errors">
+                    <!-- Tampilkan pesan-pesan error menggunakan method forEach -->
+                    <% errors.forEach(error => { %>
+                        <li><%= error %></li>
+                    <% }) %>
+                </ul>
+                <% } %>
+                <form action="/signup" method="post">
+                    <p>Nama Pengguna</p>
+                    <input type="text" name="username">
+                    <p>Email</p>
+                    <input type="text" name="email">
+                    <p>Kata Sandi</p>
+                    <input type="password" name="password">
+                    <input type="submit" value="Daftar">
+                    <a href="/list">Kembali ke artikel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
