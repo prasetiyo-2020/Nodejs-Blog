@@ -10,6 +10,7 @@
 - [x] CSS
 - [x] NodeJS
   - [x] Express
+  - [x] EJS 
 - [x] MySQL 5.7  
 
 ## Website
