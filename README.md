@@ -1,5 +1,6 @@
 ## Fitur
 - [x] Daftar Akun
+  - [x] Enkripsi menggunakan bcrypt
 - [x] Login
 - [x] Logout
 - [ ] Hapus Akun 
